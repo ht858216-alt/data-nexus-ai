@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataNexus - Tech & AI Solutions</title>
+    <script src="tailwind.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        techCyan: '#00f2fe',
+                        techBlue: '#4facfe',
+                        darkBg: '#0b0f19',
+                        cardBg: '#131a2c'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-darkBg text-gray-200 antialiased font-sans">
+
+    <!-- 1. Header / Navbar -->
+    <header class="bg-darkBg/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-baseline space-x-2">
+                <span class="text-2xl font-black bg-gradient-to-r from-techCyan to-techBlue bg-clip-text text-transparent">DataNexus</span>
+                <span class="text-[10px] text-techCyan bg-techCyan/10 px-2 py-0.5 rounded border border-techCyan/20">AI & Tech</span>
+            </div>
+            <!-- Navigation -->
+            <nav class="hidden md:flex space-x-8 font-medium text-gray-400">
+                <a href="#" class="hover:text-techCyan transition relative pb-1 group">
+                    Home
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-techCyan transition-all duration-300 -translate-x-1/2 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="hover:text-techCyan transition relative pb-1 group">
+                    AI Services
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-techCyan transition-all duration-300 -translate-x-1/2 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="hover:text-techCyan transition relative pb-1 group">
+                    Our Software
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-techCyan transition-all duration-300 -translate-x-1/2 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="hover:text-techCyan transition relative pb-1 group">
+                    Experts
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-techCyan transition-all duration-300 -translate-x-1/2 group-hover:w-full"></span>
+                </a>
+                <a href="#" class="hover:text-techCyan transition relative pb-1 group">
+                    Contact
+                    <span class="absolute bottom-0 left-1/2 w-0 h-[2px] bg-techCyan transition-all duration-300 -translate-x-1/2 group-hover:w-full"></span>
+                </a>
+            </nav>
+            <!-- CTA Button -->
+            <div>
+                <a href="#" class="inline-block border border-techCyan text-techCyan font-bold px-6 py-2 rounded hover:bg-techCyan hover:text-darkBg hover:scale-105 hover:shadow-[0_0_25px_rgba(0,242,254,0.4)] transition-all duration-300 shadow-[0_0_15px_rgba(0,242,254,0.15)]">
+                    Launch Project
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Hero Section -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="space-y-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">
+                We Build <span class="bg-gradient-to-r from-techCyan to-techBlue bg-clip-text text-transparent">Intelligent Software</span> <br>For Next-Gen Enterprise
+            </h1>
+            <p class="text-gray-400 text-lg leading-relaxed max-w-lg">
+                Empowering businesses with custom AI algorithms, data mining models, and advanced automation to scale smarter.
+            </p>
+            
+            <!-- Badges -->
+            <div class="flex flex-wrap gap-3 pt-2">
+                <span class="bg-techCyan/10 text-techCyan text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1 border border-techCyan/20">
+                    <i class="fa-solid fa-microchip"></i> Machine Learning Models
+                </span>
+                <span class="bg-blue-500/10 text-techBlue text-xs font-semibold px-3 py-1.5 rounded-full flex items-center gap-1 border border-techBlue/20">
+                    <i class="fa-solid fa-database"></i> Big Data Engineering
+                </span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex flex-wrap gap-4 pt-4">
+                <button class="bg-gradient-to-r from-techCyan to-techBlue text-darkBg font-black px-8 py-3.5 rounded shadow-lg shadow-techCyan/20 hover:scale-105 hover:shadow-techCyan/40 transition-all duration-300">
+                    Get Started Now
+                </button>
+                <button class="flex items-center gap-2 text-gray-300 font-bold px-4 py-3 hover:text-techCyan transition group">
+                    <span class="w-10 h-10 bg-cardBg border border-gray-700 shadow flex items-center justify-center rounded-full text-techCyan group-hover:scale-110 transition duration-300">
+                        <i class="fa-solid fa-play text-xs ml-0.5"></i>
+                    </span>
+                    See AI Demo
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Content (Visual Showcase - 3D Isometric Effect) -->
+        <div class="relative flex justify-center w-full max-w-md justify-self-center pt-8 md:pt-0" style="perspective: 1200px;">
+            <div class="relative w-full transition-all duration-700 ease-out transform [transform-style:preserve-3d] [transform:rotateX(15deg)_rotateY(-20deg)_rotateZ(4deg)] hover:[transform:rotateX(0deg)_rotateY(0deg)_rotateZ(0deg)] group">
+                
+                <div class="absolute inset-0 bg-gradient-to-r from-techCyan/20 to-techBlue/20 rounded-3xl blur-2xl opacity-80 group-hover:opacity-40 transition-opacity duration-700 -z-10"></div>
+                
+                <img src="images/b7165f879037c9b3881722d423f13212.jpg" alt="AI Neural Network" class="w-full h-auto rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-gray-800/80 object-cover aspect-video md:aspect-square">
+                
+                <!-- Floating Counter Badge -->
+                <div class="absolute -bottom-6 -left-6 bg-cardBg/90 backdrop-blur-md shadow-[0_15px_35px_rgba(0,0,0,0.6)] rounded-2xl p-4 border border-gray-700/60 flex items-center gap-3 [transform:translateZ(40px)] transition-transform duration-700">
+                    <div class="w-10 h-10 bg-techCyan/10 border border-techCyan/20 rounded-full flex items-center justify-center text-techCyan">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs text-gray-500 font-medium">Model Accuracy</p>
+                        <p class="text-lg font-bold text-white">99.4%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. AI & Software Services -->
+    <section class="bg-cardBg/30 py-20 border-t border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-extrabold text-white">Advanced Technology Solutions</h2>
+            <p class="text-gray-500 mt-2 max-w-xl mx-auto">We engineer specialized digital pipelines to turn complex requirements into clean solutions.</p>
+
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mt-12 text-left">
+                <!-- Card 1 -->
+                <div class="bg-cardBg border border-gray-800 rounded-2xl p-8 hover:border-techCyan/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-techCyan/10 text-techCyan rounded-xl flex items-center justify-center text-2xl border border-techCyan/20 group-hover:bg-gradient-to-r group-hover:from-techCyan group-hover:to-techBlue group-hover:text-darkBg transition-all duration-300">
+                        <i class="fa-solid fa-network-wired transform group-hover:-translate-y-1 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6">Neural Networks & ML</h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">Training deep learning and K-Nearest Neighbors classification models optimized for predictive accuracy.</p>
+                    <ul class="mt-6 space-y-2 text-sm font-medium text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techCyan"></i> Custom Model Training</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techCyan"></i> Classification Pipelines</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techCyan"></i> Pattern Recognition</li>
+                    </ul>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-cardBg border border-gray-800 rounded-2xl p-8 hover:border-techBlue/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-blue-500/10 text-techBlue rounded-xl flex items-center justify-center text-2xl border border-techBlue/20 group-hover:bg-gradient-to-r group-hover:from-techCyan group-hover:to-techBlue group-hover:text-darkBg transition-all duration-300">
+                        <i class="fa-solid fa-chart-pie transform group-hover:-translate-y-1 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6">Data Mining & Analytics</h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">Preprocessing raw data and building advanced data visualization boards to uncover operational insights.</p>
+                    <ul class="mt-6 space-y-2 text-sm font-medium text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techBlue"></i> Titanic-scale Data Filtering</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techBlue"></i> Feature Engineering</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-techBlue"></i> Python Preprocessing</li>
+                    </ul>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-cardBg border border-gray-800 rounded-2xl p-8 hover:border-purple-500/50 transition duration-300 group">
+                    <div class="w-14 h-14 bg-purple-500/10 text-purple-400 rounded-xl flex items-center justify-center text-2xl border border-purple-500/20 group-hover:bg-purple-500 group-hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-code transform group-hover:-translate-y-1 transition-transform duration-300"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mt-6">Full-Stack Development</h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">Developing robust web architectures utilizing modern tech stacks, custom styling, and clean API integration.</p>
+                    <ul class="mt-6 space-y-2 text-sm font-medium text-gray-400">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-purple-400"></i> Responsive Web Layouts</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-purple-400"></i> Regular Expressions Parsing</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-[6px] text-purple-400"></i> High-Speed API Scaling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Tech Stats Section -->
+    <section class="bg-gradient-to-r from-techBlue to-darkBg border-b border-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-4xl md:text-5xl font-black text-techCyan">99.8%</p>
+                <p class="text-sm text-gray-400 mt-1">System Uptime</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-black text-white">+240M</p>
+                <p class="text-sm text-gray-400 mt-1">API Requests Analyzed</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-black text-techCyan">+150</p>
+                <p class="text-sm text-gray-400 mt-1">AI Projects Deployed</p>
+            </div>
+            <div>
+                <p class="text-4xl md:text-5xl font-black text-white">4</p>
+                <p class="text-sm text-gray-400 mt-1">Core Expert Teams</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Core AI Engineers (Our Team) -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-extrabold text-white">Our Tech Specialists</h2>
+        <p class="text-gray-500 mt-2">The engineering group driving our deep tech innovations.</p>
+
+        <!-- Team Grid -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+            <!-- Member 1 -->
+            <div class="bg-cardBg rounded-2xl shadow-lg border border-gray-800 overflow-hidden relative group">
+                <div class="h-48 relative overflow-hidden bg-gray-800">
+                    <img src="images/7774389fa7eecfad9ea2445966ab9ae5.jpg" alt="AI Engineer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                    <div class="absolute inset-0 bg-techCyan/80 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-left">
+                    <h4 class="font-bold text-lg text-white">Eng. Ahmed</h4>
+                    <p class="text-xs text-techCyan font-semibold mt-0.5">Lead AI Architect</p>
+                </div>
+            </div>
+
+            <!-- Member 2 -->
+            <div class="bg-cardBg rounded-2xl shadow-lg border border-gray-800 overflow-hidden relative group">
+                <div class="h-48 relative overflow-hidden bg-gray-800">
+                    <img src="images/c7f9cd69787cfb858d686150d097597f.jpg" alt="Data Scientist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                    <div class="absolute inset-0 bg-techBlue/80 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-left">
+                    <h4 class="font-bold text-lg text-white">Eng. Mohamed</h4>
+                    <p class="text-xs text-techBlue font-semibold mt-0.5">Data Mining Expert</p>
+                </div>
+            </div>
+
+            <!-- Member 3 -->
+            <div class="bg-cardBg rounded-2xl shadow-lg border border-gray-800 overflow-hidden relative group">
+                <div class="h-48 relative overflow-hidden bg-gray-800">
+                    <img src="images/fe1459cd4e67b895d91173595be8d507.jpg" alt="Backend Engineer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                    <div class="absolute inset-0 bg-purple-500/80 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-left">
+                    <h4 class="font-bold text-lg text-white">Eng. Sara</h4>
+                    <p class="text-xs text-purple-400 font-semibold mt-0.5">Senior Core Developer</p>
+                </div>
+            </div>
+
+            <!-- Member 4 -->
+            <div class="bg-cardBg rounded-2xl shadow-lg border border-gray-800 overflow-hidden relative group">
+                <div class="h-48 relative overflow-hidden bg-gray-800">
+                    <img src="images/6f29497fd19d6d07881ec197c931e171.webp" alt="UI/UX Specialist" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all">
+                    <div class="absolute inset-0 bg-techCyan/80 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="w-8 h-8 bg-darkBg text-white rounded-full flex items-center justify-center hover:scale-110 transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="p-6 text-left">
+                    <h4 class="font-bold text-lg text-white">Eng. Noura</h4>
+                    <p class="text-xs text-techCyan font-semibold mt-0.5">Frontend Systems Engineer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Us & Footer Section -->
+    <footer class="bg-darkBg border-t border-gray-800 text-white pt-20 pb-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 pb-12 border-b border-gray-800">
+            <!-- Left: Contact Form -->
+            <div>
+                <h3 class="text-2xl font-bold mb-2">Initialize Consultation</h3>
+                <p class="text-gray-400 text-sm mb-6">Connect directly with our engineering division for a custom tech deployment.</p>
+                
+                <form class="space-y-4 text-gray-100">
+                    <div>
+                        <input type="text" placeholder="Authorized Representative Name" class="w-full bg-cardBg border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-techCyan transition">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Corporate Email Address" class="w-full bg-cardBg border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-techCyan transition">
+                    </div>
+                    <div>
+                        <textarea placeholder="Outline your technical parameters or pipeline goals..." rows="4" class="w-full bg-cardBg border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-techCyan transition"></textarea>
+                    </div>
+                    <button class="w-full bg-gradient-to-r from-techCyan to-techBlue text-darkBg font-black py-3 rounded-lg hover:scale-[1.02] hover:shadow-techCyan/30 transition-all duration-300 shadow-lg shadow-techCyan/10">
+                        Deploy Query
+                    </button>
+                </form>
+            </div>
+
+            <!-- Right: Contact Info & Map Card -->
+            <div class="flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Global Node Info</h3>
+                    <div class="space-y-4 text-gray-400 text-sm">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-techCyan mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-white">Primary Lab</p>
+                                <p class="text-gray-400">Cairo Tech District, Egypt</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-network-wired text-techCyan mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-white">Direct Terminal</p>
+                                <p class="text-gray-400">+20 100 779 0411</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Map Image Integration Spot -->
+                <div class="mt-8 rounded-2xl overflow-hidden border border-gray-800 h-40 relative group">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Tech Map Network" class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition duration-500">
+                    <div class="absolute inset-0 flex items-center justify-center bg-darkBg/40">
+                        <span class="font-bold text-xs tracking-widest uppercase text-techCyan border border-techCyan/30 bg-darkBg/80 px-4 py-2 rounded-lg">Network Map Terminal</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Copyright and Social Links -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 DataNexus Solutions. Systems operational.</p>
+            <div class="flex gap-4 text-gray-400 text-sm">
+                <a href="#" class="hover:text-techCyan transition"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="hover:text-techCyan transition"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" class="hover:text-techCyan transition"><i class="fa-brands fa-stack-overflow"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
